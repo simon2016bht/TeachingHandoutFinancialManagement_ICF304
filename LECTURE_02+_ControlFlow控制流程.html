@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LECTURE_02+_ControlFlow控制流程</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+
+
+
+</head>
+
+<body class="stackedit">
+<!--
+#	 <div class="stackedit__toc">
+#      
+<ul>
+<li><a href="#控制流程">控制流程</a>
+<ul>
+<li><a href="#热身">热身</a></li>
+<li><a href="#介绍控制流程">介绍控制流程</a></li>
+</ul>
+</li>
+</ul>
+
+#    </div>
+-->
+
+    <div class="stackedit__html">
+    
+<ul>
+<li><a href="#控制流程">控制流程</a>
+<ul>
+<li><a href="#热身">热身</a></li>
+<li><a href="#介绍控制流程">介绍控制流程</a>
+<ul>
+<li><a href="#分支">分支</a></li>
+<li><a href="#循环">循环</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      <p>Latest update: 05FEB2023</p>
+<blockquote>
+<p>网页版<a href="https://simon2016bht.github.io/ICF304/2+.html">https://simon2016bht.github.io/ICF304/2+.html</a></p>
+</blockquote>
+<h1 id="控制流程">控制流程</h1>
+<h2 id="热身">热身</h2>
+<p>Q：计算机有思考功能吗？<br>
+Q：计算机有记忆功能吗？</p>
+<p>《程序是怎样跑起来的》（矢泽久雄）</p>
+<blockquote>
+<p>程序的使用目的大体可以划分为两类。一类是大家作为工具来使用的程序。例如，文字处理器这个程序，大家是将其作为文档处理的工具来使用的。虽然用笔及尺子等也可以作成文档，不过用文字处理器会更有效率。这种情况可以说是程序替代了现有的工具。另外一个使用目的是用程序来代替执行人类的思考过程。例如，微计算机控制的电饭煲，会根据米和水的份量来自动调整火的大小以及加热时间，进而焖出好吃的米饭。当然，大家只要控制好火的大小及加热时间，也可以做出好吃的米饭。不过，这件事由计算机代替执行了。这种情况就可以说是借助程序，使计算机有了“思考”功能（图12-1）。</p>
+</blockquote>
+<p><img src="https://i.imgur.com/YsM6k66.png" alt="enter image description here"></p>
+<blockquote>
+<p>人类的日常判断通常是根据直觉和经验做出的。直觉并不仅仅是简单的任意思考，通常还带有一些个人的思维习惯。在前面的介绍中我们已经提到，通过借助随机数，思考习惯等也是可以表示的。而如果在此基础上再加上经验（记忆）元素的话，想必就可以作成更接近人类思考的程序了。</p>
+</blockquote>
+<blockquote>
+<p>请大家考虑一下猜拳游戏中是如何用到经验的。经过多次猜拳后，我们可能就会得到类似于“小B同学在出石头后出剪刀的概率比较高”这样的经验。基于这一经验，我们就可以应用以下策略，即“刚才小B同学出了一个石头，接下来应该会出剪刀，因此计算机出石头的话就赢了”。</p>
+</blockquote>
+<blockquote>
+<p>大家应该都听过人工智能（AI, Artificial Intelligence）这个术语。人工智能是用计算机来实现人类智能的尝试。从计算机诞生之初的1950年代开始，关于人工智能的研究就层出不穷，到现在已经有了大量成果。不过，计算机本身并不智能，它只是运行了表现人类思考方式的程序而已。也就是说，开发程序的程序员，赋予了计算机这些智能。程序只是将人类的想法在计算机上进行了重现。</p>
+</blockquote>
+<h2 id="介绍控制流程">介绍控制流程</h2>
+<p>《Python编程快速上手——让繁琐工作自动化》</p>
+<blockquote>
+<p>控制流程（也稱為流程控制）是電腦運算領域的用語，意指在程式執行時，個別的指令（或是陳述、子程序）執行或求值的順序。不論是在宣告式程式語言或是函數程式語言中，都有類似的概念。</p>
+</blockquote>
+<blockquote>
+<p>在宣告式的程式語言中，流程控制指令是指會改變程式執行順序的指令，可能是執行不同位置的指令，或是在二段（或多段）程式中選擇一個執行。</p>
+</blockquote>
+<blockquote>
+<p>所有的程序都把基本的指令作为基础素材。下面列出一些最常见的指令，用中文来描述就是：</p>
+<ul>
+<li>“做这个；然后再做那个。”</li>
+<li>“如果这个条件是真，执行这个操作；否则就执行这个操作。”</li>
+<li>“把这件事，重复那个数字表示的次数。”</li>
+<li>“一直做下去，直到条件变为真。”</li>
+</ul>
+</blockquote>
+<p>《看漫画学Python：有趣、有料、好玩、好用》 (关东升)</p>
+<blockquote>
+<p>本章介绍程序流程控制方面的内容，了解如何控制程序的流程，使得程序具有“判断能力”，能够像人脑一样分析问题。</p>
+</blockquote>
+<p>我们来看一些常出现的流程项目：<strong>开始、输入、分支、循环、跳转、输出、结束</strong>。其中包含了所有的表达式（指令）。</p>
+<h3 id="分支">分支</h3>
+<p><img src="https://i.imgur.com/yvfFtuC.png" alt="enter image description here"><br>
+<img src="https://i.imgur.com/RGaG1gF.png" alt="enter image description here"></p>
+<h3 id="循环">循环</h3>
+<p><img src="https://i.imgur.com/AkTsBcc.png" alt="enter image description here"><br>
+<img src="https://i.imgur.com/nhuUCSK.png" alt="enter image description here"></p>
+<p>以上是控制流程的基本概念，它们其实是简单易懂的。使用传统（非机器学习）的计算机编程处理问题时，我们会将其依照需要混合排列并互相堆叠，能够完成极其复杂的任务。</p>
+
+    </div>  
+
+
+</body>
+
+</html>
