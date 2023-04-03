@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LECTURE_05+_Function函数</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+
+
+
+</head>
+
+<body class="stackedit">
+<!--
+#	 <div class="stackedit__toc">
+#      
+<ul>
+<li><a href="#函数">函数</a>
+<ul>
+<li><a href="#数学里的函数">数学里的函数</a></li>
+<li><a href="#程序里的函数">程序里的函数</a></li>
+<li><a href="#函数是什么？">函数是什么？</a></li>
+<li><a href="#示例">示例</a></li>
+<li><a href="#怎么用">怎么用</a></li>
+</ul>
+</li>
+</ul>
+
+#    </div>
+-->
+
+    <div class="stackedit__html">
+    
+<ul>
+<li><a href="#函数">函数</a>
+<ul>
+<li><a href="#数学里的函数">数学里的函数</a></li>
+<li><a href="#程序里的函数">程序里的函数</a></li>
+<li><a href="#函数是什么？">函数是什么？</a></li>
+<li><a href="#示例">示例</a></li>
+<li><a href="#怎么用">怎么用</a></li>
+</ul>
+</li>
+</ul>
+
+      <blockquote>
+<p>Latest update: 26MAR2023</p>
+</blockquote>
+<blockquote>
+<p>网页版<a href="https://simon2016bht.github.io/ICF304/5+.html">https://simon2016bht.github.io/ICF304/5+.html</a></p>
+</blockquote>
+<h1 id="函数">函数</h1>
+<p><strong>首先要消除对函数的畏难、畏惧心理。</strong></p>
+<h2 id="数学里的函数">数学里的函数</h2>
+<p>这是我们学过的一个数学函数，如下图：<br>
+<img src="https://imgur.com/3y9iVo6.png" alt="enter image description here"></p>
+<p>它代表的是 <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">y= f(x) = x^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 0.625em; vertical-align: -0.19444em;"></span><span class="mord mathnormal" style="margin-right: 0.03588em;">y</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord mathnormal" style="margin-right: 0.10764em;">f</span><span class="mopen">(</span><span class="mord mathnormal">x</span><span class="mclose">)</span><span class="mspace" style="margin-right: 0.277778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right: 0.277778em;"></span></span><span class="base"><span class="strut" style="height: 0.814108em; vertical-align: 0em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height: 0.814108em;"><span class="" style="top: -3.063em; margin-right: 0.05em;"><span class="pstrut" style="height: 2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span></p>
+<p>另外，函数也可以用下图来理解（左边是x，右边是y）：<br>
+<img src="https://imgur.com/bZYmbDi.png" alt="enter image description here"></p>
+<h2 id="程序里的函数">程序里的函数</h2>
+<p>以Python程序语言为例，定义程序里的函数时使用如下指令：<br>
+<img src="https://imgur.com/OVj7hyQ.png" alt="enter image description here"><br>
+定义完函数后就可在程序各处调用（呼叫）</p>
+<h2 id="函数是什么？">函数是什么？</h2>
+<p><img src="https://imgur.com/reiyUD6.png" alt="enter image description here"></p>
+<h2 id="示例">示例</h2>
+<p><img src="https://imgur.com/xOCALjt.png" alt="enter image description here"></p>
+<p>将 320 和 480 两个数字放入已定义的函数 rect_area 中，经过函数处理后得到的输出是 153600。</p>
+<h2 id="怎么用">怎么用</h2>
+<p>函数用好了，可以节省很多的时间。我们应该对可用的函数与其功能有些基本了解，解决问题时就可能有更好、更快的方法。</p>
+<p>一般程序语言中，已经有基本的函数库，如"print", “add”, “concatenation”…。我们会基于已有的函数稍加修改或增减后构筑出自己需要的功能。</p>
+<p>Excel 有很多有用的内建函数，大致可分为五类：</p>
+<ol>
+<li>文本清洗类</li>
+<li>关联匹配类</li>
+<li>逻辑运算类</li>
+<li>计算统计类</li>
+<li>时间序列类</li>
+</ol>
+<p>推荐各位同学自行寻找 Excel 函数以及 VBA 的相关教学，对于可用的功能有大致了解，增加自已解决问题的工具，时机适当时即可使用。</p>
+<p>ref: 《看漫画学Python》（关东升2020）<br>
+ref: 《<a href="https://zhuanlan.zhihu.com/p/82348508">Excel常见函数学习（一）</a>》（liuhuim）</p>
+
+    </div>  
+
+
+</body>
+
+</html>
